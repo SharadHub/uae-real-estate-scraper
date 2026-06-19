@@ -1,4 +1,4 @@
-import type { CheerioCrawlingContext } from "crawlee";
+import { CheerioCrawlingContext } from "crawlee";
 import { BASE_URL, MAX_PAGES } from "../config.js";
 
 export async function handleListPage({ $, request, addRequests }: CheerioCrawlingContext) {
