@@ -1,7 +1,6 @@
 import { CheerioCrawler } from "crawlee";
 import fs from "fs";
 import path from "path";
-import { proxyConfiguration } from "./config.js";
 import { handleListPage } from "./handlers/list.js";
 import { handleDetailPage } from "./handlers/detail.js";
 
@@ -51,8 +50,6 @@ function persistFailedUrl(url: string) {
 // ── Crawler ────────────────────────────────────────────────────────────────
 
 export const crawler = new CheerioCrawler({
-  proxyConfiguration,
-
   // Low concurrency to mimic human browsing pace and avoid rate-limits
   minConcurrency: 1,
   maxConcurrency: 2,
