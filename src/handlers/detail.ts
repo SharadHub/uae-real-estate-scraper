@@ -1,5 +1,5 @@
 import { Dataset } from "crawlee";
-import type { CheerioCrawlingContext } from "crawlee";
+import { CheerioCrawlingContext } from "crawlee";
 import { BASE_URL } from "../config.js";
 
 function extractImages($: CheerioCrawlingContext["$"]): string[] {
